@@ -3,11 +3,12 @@ body {
     padding: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #fff;
-    background: rgb(0, 0, 0);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgb(1, 0, 20) 0%, rgb(0, 0, 49) 100%);
     height: 100dvh;
     overflow-x: hidden;
+    background-repeat: repeat;
 }
-
 .container {
     position: relative;
     margin: 0 auto;
@@ -68,45 +69,36 @@ body {
     filter: blur(100px);
 }
 
-.infoPanel {
-    position: relative;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100dvw;
-    height: 50dvh;
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-
-#content-color {
-    background: #1488CC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-
-#content-color2 {
-    background: #1488CC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
 .content-info {
     position: absolute;
     display: flex;
-    align-items: center;
     flex-direction: column;
     width: 1000px;
-    text-align: center;
     top: 50px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
+.infoPanel-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 100dvw;
+    height: 40dvh;
+    margin: 100px;
+    left:50px;
+}
+
+.infoPanel-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 40dvh;
+    text-align: right;
+    margin: 100px 0 100px 45dvw;
+}
 .button {
     background-color: #aaaaaa52;
     border: none;
