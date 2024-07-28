@@ -47,13 +47,18 @@
     </section>
     <section class="infoPanel-left" >
         <div class="content-info" data-aos="fade-up" data-aos-delay="100">
-            <h1 id="h1-content-info"> Music & Performances:</h1>
+            <h1 id="h1-content-info"> Music & Performances</h1>
             <p id="p-content-info"> Top DJs and live bands will set the festival's 
                 high-octane soundtrack,
                  accompanied by jaw-dropping stunts and performances.
             </p>
         </div>
-        </section>
+    </section>
+    <section class="countdown">
+        <div class="countdown-content">
+            <p id="counter"></p>
+        </div>
+    </section>
     <footer>
         <div class="footer">
             <p>&copy; 2024 The Los Santos Motor Festival. All rights reserved.</p>
@@ -62,4 +67,34 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 3, 2024 02:00:00 GMT+0200").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("counter").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 </html>
