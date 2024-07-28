@@ -11,12 +11,12 @@
     <header>
         <div class="container">
             <img src="assets/LSbackground.jpg" alt="background" class="header-image">
-            <img src="assets/LSMF.png" alt="flare" class="header-flare" data-aos="fade-up" data-aos-delay="100"> 
-            <img src="assets/flare2.png" alt="flare" class="header-flare2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/LSMF.png" alt="flare" class="header-flare" data-aos="fade-up" data-aos-delay="0"> 
+            <img src="assets/flare2.png" alt="flare" class="header-flare2" data-aos="fade-up" data-aos-delay="0">
             <div class="contentblur">
             </div>
             <div class="content">
-                <h1 Id="header" data-aos="fade-up">The Los Santos Motor Festival</h1>
+                <h1 Id="header" data-aos="fade-up"data-aos-delay="100">The Los Santos Motor Festival</h1>
                 <p id="headerP" data-aos="fade-up" data-aos-delay="100">Rev Up Your Engines For The Los Santos Motor Festival!</p>
                  <p id="headerInfo"  data-aos="fade-up" data-aos-delay="100">Buckle up, adrenaline junkies and motor enthusiasts, because the most electrifying event of the year is zooming your way!
                     The Los Santos Motor Festival is here, and it's revving up to be a turbo-charged extravaganza like no other. Get ready for a heart-pounding 
@@ -37,7 +37,7 @@
         </div>
         </section>
     <section class="infoPanel-right">
-        <div class="content-info" data-aos="fade-up" data-aos-delay="100">
+        <div class="content-info" data-aos="fade-up" data-aos-delay="0">
             <h1 id="h1-content-info"> Food & Motors</h1>
             <p id="p-content-info"> Indulge in delectable dishes from gourmet 
                 food trucks while exploring a 
@@ -46,7 +46,7 @@
         </div>
     </section>
     <section class="infoPanel-left" >
-        <div class="content-info" data-aos="fade-up" data-aos-delay="100">
+        <div class="content-info" data-aos="fade-up" data-aos-delay="0">
             <h1 id="h1-content-info"> Music & Performances</h1>
             <p id="p-content-info"> Top DJs and live bands will set the festival's 
                 high-octane soundtrack,
@@ -56,7 +56,10 @@
     </section>
     <section class="countdown">
         <div class="countdown-content">
-            <p id="counter"></p>
+            <p id="counter" data-aos="fade-up" data-aos-delay="0"></p>
+        </div>
+        <div>
+            <p id="Date" data-aos="fade-up" data-aos-delay="0">8PM EST AUGUST 2ND</p>
         </div>
     </section>
     <footer>
@@ -68,6 +71,7 @@
     <script src="script.js"></script>
 </body>
 <script>
+    document.getElementById("counter").style.cssText = "font-size:55px;"
 
     countdown();
     getCorrectTime(120);

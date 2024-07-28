@@ -111,6 +111,36 @@ body {
   }
 
 
+  .countdown {
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Date {
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+  }
+
 .footer {
     background: #343a40;
     color: #fff;
