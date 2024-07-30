@@ -82,11 +82,9 @@
     
     // Update the count down every 1 second
     var x = setInterval(function() {
-    
-      // Get today's date and time
-      var TimeNow = getCorrectTime(120);
-      var now = TimeNow;
-    
+
+    // Get today's date and time
+    var now = new Date().getTime();
       // Find the distance between now and the count down date
       var distance = countDownDate - now;
     
@@ -108,7 +106,7 @@
     }, 1000);
 }
     
- /**function getCorrectTime(offset) {
+ /**--function getCorrectTime(offset) {
   var timezone = new Date();
   var n = timezone.getTimezoneOffset();
   if (n < 0) {  //if your time zone offset is negative then use ( < ) else change it to ( > )
