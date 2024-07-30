@@ -72,7 +72,7 @@
     <script src="script.js"></script>
 </body>
 <script>
-    document.getElementById("counter").style.cssText = "font-size:55px"
+    document.getElementById("counter").style.cssText = "font-size:55px;margin:100px;"
 
     countdown();
     getCorrectTime(120);
@@ -103,12 +103,12 @@
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("counter").innerHTML = "EXPIRED";
+        document.getElementById("counter").innerHTML = "Let the show begin";
       }
     }, 1000);
 }
     
-function getCorrectTime(offset) {
+ /**function getCorrectTime(offset) {
   var timezone = new Date();
   var n = timezone.getTimezoneOffset();
   if (n < 0) {  //if your time zone offset is negative then use ( < ) else change it to ( > )
@@ -131,6 +131,6 @@ function getCorrectTime(offset) {
     var now = new Date().getTime() + (time*60*1000); //if your time zone offset is negative then use ( + ) else change it to ( - )
     return now;
   }
-}
+}*/
     </script>
 </html>
