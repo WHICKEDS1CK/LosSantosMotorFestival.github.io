@@ -54,14 +54,15 @@
             </p>
         </div>
     </section>
-    <section class="countdown">
+    <div class="countdown">
+        <img src="assets/LSmeet.jpg" alt="background" class="countdown-image">
         <div class="countdown-content">
             <p id="counter" data-aos="fade-up" data-aos-delay="0"></p>
+            <p class="Date" data-aos="fade-up" data-aos-delay="0">See you at the LS Underground</p>
+            <p class="Date" data-aos="fade-up" data-aos-delay="0">8PM EST AUGUST 2ND</p>
         </div>
-        <div>
-            <p id="Date" data-aos="fade-up" data-aos-delay="0">8PM EST AUGUST 2ND</p>
         </div>
-    </section>
+    </div>
     <footer>
         <div class="footer">
             <p>&copy; 2024 The Los Santos Motor Festival. All rights reserved.</p>
@@ -71,7 +72,7 @@
     <script src="script.js"></script>
 </body>
 <script>
-    document.getElementById("counter").style.cssText = "font-size:55px;"
+    document.getElementById("counter").style.cssText = "font-size:55px"
 
     countdown();
     getCorrectTime(120);

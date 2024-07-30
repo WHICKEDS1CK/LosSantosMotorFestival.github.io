@@ -108,6 +108,7 @@ body {
     display: inline-block;
     font-size: 16px;
     border-radius: 12px;
+    cursor: pointer;
   }
 
 
@@ -122,6 +123,16 @@ body {
     align-items: center;
   }
 
+  .countdown-image {
+    margin: 0 auto;
+    width: 100dvw;
+    height: 100dvh;
+    opacity: 0.05;
+    filter: blur(5px);
+    z-index: -2;
+    position: absolute;
+  }
+
   .counter {
     position: absolute;
     margin: 0 auto;
@@ -132,13 +143,13 @@ body {
   }
 
   .Date {
-    position: absolute;
+    position: relative;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5em;
+    font-size: 25px;
   }
 
 .footer {
