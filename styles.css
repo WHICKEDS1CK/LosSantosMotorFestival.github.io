@@ -44,7 +44,7 @@ body {
     position: absolute;
     right: -400px;
     top: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .content {
@@ -123,6 +123,7 @@ body {
     align-items: center;
   }
 
+
   .countdown-image {
     margin: 0 auto;
     width: 100dvw;
@@ -138,7 +139,6 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -147,9 +147,9 @@ body {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-size: 25px;
+    bottom:50px;
   }
 
 .footer {
